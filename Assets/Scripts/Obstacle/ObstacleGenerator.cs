@@ -15,7 +15,6 @@ public class ObstacleGenerator : MonoBehaviour
 
     public virtual void SpawnObstacle()
     {
-
         int obstacleIndex = Random.Range(0, obstacles.Length);
         GameObject obstacle = obstacles[obstacleIndex];
         Instantiate(obstacle, transform);

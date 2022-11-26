@@ -10,15 +10,13 @@ public class EndlessScroll : MonoBehaviour
     [SerializeField] private Vector3 gameVelocity;
 
     private Rigidbody rb;
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.velocity = gameVelocity * scrollFactor;
     }
-     
-    // Update is called once per frame
+         
     void Update()
     {
         
